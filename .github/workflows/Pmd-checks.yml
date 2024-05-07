@@ -1,5 +1,5 @@
 name: PMD Checks
-run-name: it is name
+run-name: ${{ github.actor }} is running a pipeline
 on:
   pull_request:
     branches: ["main"]
