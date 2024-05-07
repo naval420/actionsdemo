@@ -2,7 +2,7 @@ name: pmdchecks
 run-name: ${{ github.actor }} is running a pipeline
 on:
   pull_request:
-     branches: ["main"]
+     branches: main
      Jobs:
        Pmd-analysis:
          runs-on: ubuntu-latest
