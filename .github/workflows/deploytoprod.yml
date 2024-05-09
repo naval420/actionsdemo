@@ -28,7 +28,7 @@ jobs:
             - name: 'Populate auth file with SAND_SFDX_URL secret'
               shell: bash
               run: |
-                  echo ${{ secrets.SAND_SFDX_URL}} > ./SAND_SFDX_URL.txt
+                  echo ${{ secrets.SFDX_URL}} > ./SAND_SFDX_URL.txt
                   secretFileSize=$(wc -c "./SAND_SFDX_URL.txt" | awk '{print $1}')
                   if [ $secretFileSize == 1 ]; then
                       echo "Missing SAND_SFDX_URL secret. Is this workflow running on a fork?";
