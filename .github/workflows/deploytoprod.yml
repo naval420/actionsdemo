@@ -26,7 +26,7 @@ jobs:
             - name: 'Populate auth file with SAND_SFDX_URL secret'
               shell: bash
               run: |
-                  echo ${{ secrets.SFDX_URL_SAND}} > ./SAND_SFDX_URL.txt
+                  echo ${{ secrets.SFDX_URL}} > ./SAND_SFDX_URL.txt
                   secretFileSize=$(wc -c "./SAND_SFDX_URL.txt" | awk '{print $1}')
                   if [ $secretFileSize == 1 ]; then
                       echo "Missing SAND_SFDX_URL secret. Is this workflow running on a fork?";
@@ -38,4 +38,4 @@ jobs:
               
             # Deploy source to Acc org
             - name: 'Push source to Acc org'
-              run: sf force:source:deploy -u codetest@cyntexa.com -p force-app/main/default
+              run: sf force:source:deploy -u may23@test.com -p force-app/main/default
