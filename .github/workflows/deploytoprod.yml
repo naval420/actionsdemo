@@ -1,3 +1,4 @@
+
 name: DeploytoProd
 run-name: ${{github.actor}} Deploytoproduction
 # Controls when the workflow will run
@@ -38,4 +39,4 @@ jobs:
               
             # Deploy source to Acc org
             - name: 'Push source to Acc org'
-              run: sf force:source:deploy -u may23@test.com -p force-app/main/default
+              run: sf force:source:deploy -u may23@test.com -p force-app/m
