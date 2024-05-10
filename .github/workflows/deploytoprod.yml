@@ -39,4 +39,4 @@ jobs:
               
             # Deploy source to Acc org
             - name: 'Push source to Acc org'
-              run: sf force:source:deploy -u may23@test.com -p force-app/force-app/main/default/objects
+              run: sf force:source:deploy -u may23@test.com -p force-app/main/default/objects
