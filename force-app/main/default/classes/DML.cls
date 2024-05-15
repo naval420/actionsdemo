@@ -19,6 +19,7 @@ public class DML {
             if(s.isSuccess()){
                 
                 System.debug(s.getId());
+system.debug('hellow')
                 
                 
             }
