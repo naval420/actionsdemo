@@ -4,7 +4,7 @@ public class Accounthelperclass {
         
       if(handleaccountrecursion.accountflag){
 
-      system.debug('hello hi alok');
+      system.debug('hello hi');
     Account childaccount = new Account(Name=ac.Name+' childaccount',ParentId=ac.Id);
       
    handleaccountrecursion.accountflag =false; 
